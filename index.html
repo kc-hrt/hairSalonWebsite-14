@@ -16,7 +16,7 @@
 			<img src="img/logo.png" alt="Home | Urban Cutz">
 		</a>
 
-        <!-- navbar -->
+        <!-- navbar, had issues with getting it to center, for refrenced used: https://matthewjamestaylor.com/css-centred-menus -->
         <ul id="navbar">
             <li class="home"><a href="./index.html" class="selected">Home</a></li>
             <li class="gallery"><a href="./gallery.html">Galery</a></li>
@@ -25,11 +25,93 @@
             <li class="contact"><a href="./contact.html">Contact</a></li>
         </ul>
     </div>
+    <!-- main content -->
+    <div id="main">
+        <!-- banner and text over banner area -->
+        <div id="banner">
+            <div id="main-text">
+                <h2>A cut above the rest</h2>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                <button class="btn-more"><a href="./blog.html" class="btn-more-text">Read more</a></button>
+            </div>
+        </div>
 
-    <main>
-        
-    </main>
+        <!-- gallery preview area -->
+        <div class="container-row"> 
+            <div class="container-column">
+                <img src="./img/1.jpg" alt="1">
+            </div>
     
+            <div class="container-column">
+                <img src="./img/2.jpg" alt="2">
+            </div> 
+            
+            <div class="container-column">
+                <img src="./img/3.jpg" alt="3">
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- footer area -->
+    <div id="footer">
+        <div class="footer-row"> 
+            <div class="footer-column">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Home | Urban Cutz" class="footer-logo">
+                </a>
+            </div>
+    
+            <div class="footer-column" id="links">
+                <h3>Links</h3>
+                <ul>
+                    <li class="home"><a href="./index.html" class="selected">Home</a></li>
+                    <li class="gallery"><a href="./gallery.html">Galery</a></li>
+                    <li class="about"><a href="./about.html">About</a></li>
+                    <li class="blog"><a href="./blog.html">Blog</a></li>
+                    <li class="contact"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div> 
+            
+            <div class="footer-column">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="https://instagram.com"><img src="img/ig-icon.svg" alt="Instagram" class="sm-icon"></a></li>
+                    <li><a href="https://pinterest.com"><img src="img/pinterest-icon.svg" alt="Pinterest" class="sm-icon"></a></li>
+                    <li><a href="https://twitter.com"><img src="img/twitter-icon.svg" alt="Twitter" class="sm-icon"></a></li>
+                </ul>
+                
+                <!-- <ul>
+                    <li>
+                        <a href="index.html" class="sm-text">
+                            <img src="img/ig-icon.svg" alt="Instagram" class="sm-icon">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="sm-text">
+                            <img src="img/pinterest-icon.svg" alt="Pinterest" class="sm-icon">
+                            Pinterest
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="sm-text">
+                            <img src="img/twitter-icon.svg" alt="Twitter" class="sm-icon">
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="sm-text">
+                            <img src="img/phone-icon.svg" alt="Instagram" class="sm-icon">
+                            Phone
+                        </a>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
 
 </body>
 </html> 
