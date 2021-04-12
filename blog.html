@@ -4,12 +4,104 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generic Hair Salon - Resume | kasey</title>
-
-  <link rel="stylesheet" href="./css/sytles.css">
-  <script src="./js/code.js"></script>
+  <title>Urabn Cutz - Blog | kasey</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/blog-styles.css">
+  <script src="./js/card.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  
 </head>
 <body>
+  <!-- header area -->
+  <div id="header">
+      <!-- logo -->
+      <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="Home | Urban Cutz">
+  </a>
+
+      <!-- navbar, had issues with getting it to center, for refrenced used: https://matthewjamestaylor.com/css-centred-menus -->
+      <ul id="navbar">
+          <li class="home"><a href="./index.html">Home</a></li>
+          <li class="gallery"><a href="./gallery.html">Gallery</a></li>
+          <li class="about"><a href="./about.html">About</a></li>
+          <li class="blog"><a href="./blog.html" class="selected">Blog</a></li>
+          <li class="contact"><a href="./contact.html">Contact</a></li>
+          
+      </ul>
+  </div>
   
+  
+  <!-- about content -->
+  <div id="main">
+    <div id="about">
+      <h1>Urban Cutz Blog</h1>
+      <!-- <img src="./img/aboutImage.jpg" alt="About urban Cutz" class="about-img"> -->
+      <div id="about-text">
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus perferendis saepe facere commodi ea quae, obcaecati quia sequi voluptatem accusamus doloremque iste impedit illum aspernatur veritatis. Sint quae quis perspiciatis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus perferendis saepe facere commodi ea quae, obcaecati quia sequi voluptatem accusamus doloremque iste impedit illum aspernatur veritatis. Sint quae quis perspiciatis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus perferendis saepe facere commodi ea quae, obcaecati quia sequi voluptatem accusamus doloremque iste impedit illum aspernatur veritatis. Sint quae quis perspiciatis.</p> -->
+        <figure class="snip1529">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample13.jpg" alt="pr-sample13" />
+          <div class="date"><span class="day">28</span><span class="month">Apr</span></div>
+          <figcaption>
+            <h3>An Abstract Post Heading</h3>
+            <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+          </figcaption>
+          <div class="hover"><i class="ion-android-open"></i></div>
+          <a href="#"></a>
+        </figure>
+        <figure class="snip1529 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample21.jpg" alt="pr-sample21" />
+          <div class="date"><span class="day">17</span><span class="month">May</span></div>
+          <figcaption>
+            <h3>Down with this sort of thing</h3>
+            <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+          </figcaption>
+          <div class="hover"><i class="ion-android-open"></i></div>
+          <a href="#"></a>
+        </figure>
+        <figure class="snip1529"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample23.jpg" alt="pr-sample23" />
+          <div class="date"><span class="day">08</span><span class="month">June</span></div>
+          <figcaption>
+            <h3>The World Ended Yesterday</h3>
+            <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+          </figcaption>
+          <div class="hover"><i class="ion-android-open"></i></div>
+          <a href="#"></a>
+        </figure>
+      </div>
+    </div>
+  
+  <!-- footer area -->
+  <div id="footer">
+      <div class="footer-row"> 
+          <div class="footer-column">
+              <a href="index.html">
+                  <img src="img/logo.png" alt="Home | Urban Cutz" class="footer-logo">
+              </a>
+          </div>
+  
+          <div class="footer-column" id="links">
+              <h3>Links</h3>
+              <ul>
+                  <li class="home"><a href="./index.html" class="selected">Home</a></li>
+                  <li class="gallery"><a href="./gallery.html">Galery</a></li>
+                  <li class="about"><a href="./about.html">About</a></li>
+                  <li class="blog"><a href="./blog.html">Blog</a></li>
+                  <li class="contact"><a href="./contact.html">Contact</a></li>
+              </ul>
+          </div> 
+          
+          <div class="footer-column">
+              <h3>Social Media</h3>
+              <ul>
+                  <li><a href="https://instagram.com"><img src="img/ig-icon.svg" alt="Instagram" class="sm-icon"></a></li>
+                  <li><a href="https://pinterest.com"><img src="img/pinterest-icon.svg" alt="Pinterest" class="sm-icon"></a></li>
+                  <li><a href="https://twitter.com"><img src="img/twitter-icon.svg" alt="Twitter" class="sm-icon"></a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
 </body>
 </html>

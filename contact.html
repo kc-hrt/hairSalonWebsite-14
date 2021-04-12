@@ -1,15 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generic Hair Salon - Contact | kasey</title>
-
-  <link rel="stylesheet" href="./css/sytles.css">
-  <script src="./js/code.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Cutz - Home | kasey</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  
+    <!-- header area -->
+    <div id="header">
+        <!-- logo -->
+        <a href="index.html" class="logo">
+			<img src="img/logo.png" alt="Home | Urban Cutz">
+		</a>
+
+        <!-- navbar, had issues with getting it to center, for refrenced used: https://matthewjamestaylor.com/css-centred-menus -->
+        <ul id="navbar">
+            <li class="home"><a href="./index.html">Home</a></li>
+            <li class="gallery"><a href="./gallery.html">Gallery</a></li>
+            <li class="about"><a href="./about.html">About</a></li>
+            <li class="blog"><a href="./blog.html">Blog</a></li>
+            <li class="contact"><a href="./contact.html" class="selected">Contact</a></li>
+        </ul>
+    </div>
+    
+    
+    <!-- main content -->
+    <div id="main">
+      <div class="contact">
+        <h1 class="title">Contact</h1>
+        <!-- <img src="img/70s-bg.jpg" alt=""> -->
+        <form action="http://fotohut.org/dvorakAHF/ACA/send.php" method="post" onsubmit="return validation(this);">
+            <p class="required">Name *</p>
+            <input name="FirstName" required="" type="text" />
+            <p class="not-required">Email</p>
+            <input name="EmailFrom" required="" type="text" />
+            <p class="required">Phone *</p>
+            <input name="Phone" required="" type="text" />
+    
+            <h3 class="required">Message *</h3>
+            <textarea id="Message" name="Message" required="" rows="10"></textarea>
+    
+            <p>How would you like to be contacted?</p>
+            <select name="/contactMethod">
+              <option value="Phone">Phone</option>
+              <option value="Email">Email</option> 
+            </select>
+    
+            <input class="send-btn" name="submit" type="submit" value="Submit" />
+          </form>
+          <h4>* Required Fields</h4>
+          <p>This page actually works, I created the PHP send page many years ago for a family member, so I recycled the send code by redirecting the Sumbit button you should end up on a home page.</p>  <p>If you enter a question or comment in the message box, I can respond.</p>
+        </div>
+      </div>
+    <!-- footer area -->
+    <div id="footer">
+        <div class="footer-row"> 
+            <div class="footer-column">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Home | Urban Cutz" class="footer-logo">
+                </a>
+            </div>
+    
+            <div class="footer-column" id="links">
+                <h3>Links</h3>
+                <ul>
+                    <li class="home"><a href="./index.html" class="selected">Home</a></li>
+                    <li class="gallery"><a href="./gallery.html">Galery</a></li>
+                    <li class="about"><a href="./about.html">About</a></li>
+                    <li class="blog"><a href="./blog.html">Blog</a></li>
+                    <li class="contact"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div> 
+            
+            <div class="footer-column">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="https://instagram.com"><img src="img/ig-icon.svg" alt="Instagram" class="sm-icon"></a></li>
+                    <li><a href="https://pinterest.com"><img src="img/pinterest-icon.svg" alt="Pinterest" class="sm-icon"></a></li>
+                    <li><a href="https://twitter.com"><img src="img/twitter-icon.svg" alt="Twitter" class="sm-icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </body>
-</html>
+</html> 
