@@ -8,9 +8,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/blog-styles.css">
-  <script src="./js/card.js"></script>
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  
+  <link rel="stylesheet" href="./css/blog.scss">
 </head>
 <body>
   <!-- header area -->
@@ -35,42 +33,40 @@
   <!-- about content -->
   <div id="main">
     <div id="about">
-      <h1>Urban Cutz Blog</h1>
+      <!-- <h1>Urban Cutz Blog</h1> -->
       <!-- <img src="./img/aboutImage.jpg" alt="About urban Cutz" class="about-img"> -->
       <div id="about-text">
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus perferendis saepe facere commodi ea quae, obcaecati quia sequi voluptatem accusamus doloremque iste impedit illum aspernatur veritatis. Sint quae quis perspiciatis.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus perferendis saepe facere commodi ea quae, obcaecati quia sequi voluptatem accusamus doloremque iste impedit illum aspernatur veritatis. Sint quae quis perspiciatis.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus perferendis saepe facere commodi ea quae, obcaecati quia sequi voluptatem accusamus doloremque iste impedit illum aspernatur veritatis. Sint quae quis perspiciatis.</p> -->
-        <figure class="snip1529">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample13.jpg" alt="pr-sample13" />
-          <div class="date"><span class="day">28</span><span class="month">Apr</span></div>
-          <figcaption>
-            <h3>An Abstract Post Heading</h3>
-            <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
-          </figcaption>
-          <div class="hover"><i class="ion-android-open"></i></div>
-          <a href="#"></a>
-        </figure>
-        <figure class="snip1529 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample21.jpg" alt="pr-sample21" />
-          <div class="date"><span class="day">17</span><span class="month">May</span></div>
-          <figcaption>
-            <h3>Down with this sort of thing</h3>
-            <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
-          </figcaption>
-          <div class="hover"><i class="ion-android-open"></i></div>
-          <a href="#"></a>
-        </figure>
-        <figure class="snip1529"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/pr-sample23.jpg" alt="pr-sample23" />
-          <div class="date"><span class="day">08</span><span class="month">June</span></div>
-          <figcaption>
-            <h3>The World Ended Yesterday</h3>
-            <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-          </figcaption>
-          <div class="hover"><i class="ion-android-open"></i></div>
-          <a href="#"></a>
-        </figure>
+        
+        <div class="blog-card">
+          <div class="photo-wrapper">
+            <div class="photo" style="background-image: url(./img/merman.jpg)"></div>
+          </div>
+          <div class="description">
+            <h1>Merman Beard</h1>
+            <h2>Men are Dying Hair with Vivid Colors</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt mollitia deleniti reprehenderit, eligendi cum maxime minus in velit, id molestiae necessitatibus quam, vitae non facilis. Cum maxime deserunt fugiat dolorem.</p>
+            <p class="read-more">
+              <a href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+        <div class="blog-card alt">
+          <div class="photo-wrapper">
+            <div class="photo" style="background-image: url(./img/cut-own-hair.jpg)"></div>
+          </div>
+          <div class="description">
+            <h1>Mastering Hair in a Pandimic</h1>
+            <h2>Learn to Cut Your Own Hair</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe sed, ipsum explicabo maxime optio ducimus recusandae aut soluta qui laborum, nihil labore excepturi, quos consequatur dolores incidunt deserunt...</p>
+            <p class="read-more">
+              <a href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+        
       </div>
     </div>
+  </div>
   
   <!-- footer area -->
   <div id="footer">
